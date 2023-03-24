@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="~/Content/img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          crossorigin="anonymous">
+
+    <!-- owl carousel libraries -->
+    <link rel="stylesheet" href="~/Content/js/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/js/owlcarousel/owl.theme.default.min.css">
+    <script src="~/Content/js/Jquery/Jquery.min.js"></script>
+    <script src="~/Content/js/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- tidio - live chat -->
+    <!-- <script src="//code.tidio.co/bfiiplaaohclhqwes5xivoizqkq56guu.js"></script> -->
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/css/topnav.css">
+    <link rel="stylesheet" href="~/Content/css/header.css">
+    <link rel="stylesheet" href="~/Content/css/banner.css">
+    <link rel="stylesheet" href="~/Content/css/taikhoan.css">
+    <link rel="stylesheet" href="~/Content/css/trangchu.css">
+    <link rel="stylesheet" href="~/Content/css/home_products.css">
+    <link rel="stylesheet" href="~/Content/css/pagination_phantrang.css">
+    <link rel="stylesheet" href="~/Content/css/footer.css">
+    <!-- js -->
+    <script src="~/Scripts/data/products.js"></script>
+    <script src="~/Scripts/js/classes.js"></script>
+    <script src="~/Scripts/js/dungchung.js"></script>
+    <script src="~/Scripts/js/trangchu.js"></script>
+
+</head>
+<body>
+    <header>
+        <script>addTopNav();</script>
+        <section>
+            <script>addHeader();</script>
+        </section>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    <div class="footer">
+        <script>addFooter()</script>
+    </div>
+</body>
+</html>
