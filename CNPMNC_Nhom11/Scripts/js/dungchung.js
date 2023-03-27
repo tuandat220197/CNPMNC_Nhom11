@@ -1,4 +1,4 @@
-var adminInfo = [{
+﻿var adminInfo = [{
     "username": "admin",
     "pass": "adadad"
 }];
@@ -193,7 +193,7 @@ function logIn(form) {
     // Kiểm tra xem dữ liệu form có khớp với người dùng nào trong danh sách ko
     for (var u of listUser) {
         if (equalUser(newUser, u)) {
-            if(u.off) {
+            if (u.off) {
                 alert('Tài khoản này đang bị khoá. Không thể đăng nhập.');
                 return false;
             }
@@ -211,7 +211,7 @@ function logIn(form) {
         if (equalUser(newUser, ad)) {
             alert('Xin chào admin .. ');
             window.localStorage.setItem('admin', true);
-            window.location.assign('admin.html');
+            window.location.assign('admin');
             return false;
         }
     }
@@ -509,10 +509,10 @@ function addTags(nameTag, link) {
 
 // Thêm sản phẩm vào trang
 function addProduct(p, ele, returnString) {
-	promo = new Promo(p.promo.name, p.promo.value); // class Promo
-	product = new Product(p.masp, p.name, p.img, p.price, p.star, p.rateCount, promo); // Class product
+    promo = new Promo(p.promo.name, p.promo.value); // class Promo
+    product = new Product(p.masp, p.name, p.img, p.price, p.star, p.rateCount, promo); // Class product
 
-	return addToWeb(product, ele, returnString);
+    return addToWeb(product, ele, returnString);
 }
 
 // Thêm topnav vào trang
@@ -529,10 +529,10 @@ function addTopNav() {
 
             <ul class="top-nav-quicklink flexContain">
                 <li><a href="Index"><i class="fa fa-home"></i> Trang chủ</a></li>
-                <li><a href="tintuc.html"><i class="fa fa-newspaper-o"></i> Tin tức</a></li>
-                <li><a href="tuyendung.html"><i class="fa fa-handshake-o"></i> Tuyển dụng</a></li>
-                <li><a href="gioithieu.html"><i class="fa fa-info-circle"></i> Giới thiệu</a></li>
-                <li><a href="trungtambaohanh.html"><i class="fa fa-wrench"></i> Bảo hành</a></li>
+                <li><a href="Contact"><i class="fa fa-newspaper-o"></i> Tin tức</a></li>
+                <li><a href="Contact"><i class="fa fa-handshake-o"></i> Tuyển dụng</a></li>
+                <li><a href="Contact"><i class="fa fa-info-circle"></i> Giới thiệu</a></li>
+                <li><a href="Contact"><i class="fa fa-wrench"></i> Bảo hành</a></li>
                 <li><a href="Contact"><i class="fa fa-phone"></i> Liên hệ</a></li>
             </ul> <!-- End Quick link -->
         </section><!-- End Section -->
@@ -724,7 +724,7 @@ function addPlc() {
 
 // https://stackoverflow.com/a/2450976/11898496
 function shuffleArray(array) {
-    let currentIndex = array.length,  randomIndex;
+    let currentIndex = array.length, randomIndex;
 
     // While there remain elements to shuffle...
     while (currentIndex != 0) {
@@ -735,7 +735,7 @@ function shuffleArray(array) {
 
         // And swap it with the current element.
         [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+            array[randomIndex], array[currentIndex]];
     }
 
     return array;

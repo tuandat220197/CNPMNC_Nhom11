@@ -26,5 +26,11 @@ namespace CNPMNC_Nhom11.Controllers
 
             return View();
         }
+        public ActionResult admin()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
